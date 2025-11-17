@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const API_KEY = "AIzaSyDykpoH-ksMNDnHX5luH9xk-6-SajMfnuw";
+const API_KEY = import.meta.env.VITE_YOUTUBE_API;
+
 const DEFAULT_TERM = "latest tech news";
 
 export default function App() {
